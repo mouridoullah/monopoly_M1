@@ -1,0 +1,127 @@
+@import 'Global.scss';
+
+.MainWrapper{
+
+    @include grid-container-mixin(center, center, 25% 50% 25%);
+    width : 100%;
+}
+
+.left-sidebar{
+
+    @include grid-container-mixin(space-around, center, 100%, 48% 48%);
+    height : 98vh;
+    width : 60%;
+    background-color: #c0c7ef;
+
+}
+
+.right-sidebar{
+
+    @include grid-container-mixin(space-around, center, 100%, 30% 40% 30%);
+    height : 98vh;
+    width : 60%;
+    background-color: #c0c7ef;
+
+}
+
+.grid-item-dice-container-styles{
+
+    background : radial-gradient(rgb(202, 17, 219),rgb(85, 6, 85));
+    border-radius: 1%;
+    height : 6.5rem;
+    width : 100%;
+    background-color: purple;
+    grid-column : span 2;
+
+}
+
+
+.opponents-sidebar{
+
+    
+    @include grid-container-mixin(start, center, 100%, repeat(8, 20%));
+    height : 100%;
+    width : 95%;
+    background-color: #6f4cc0;
+    
+}
+
+.log-wrapper{
+
+    height : 100%;
+    width : 95%;
+    background-color: #6270be;
+    border-radius: 1%;
+    display : flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    overflow: hidden;
+    
+}
+
+
+.game-control-container{
+
+    @include grid-container-mixin(start center, center, 48% 48%);
+    width : 100%;
+    height : auto
+}
+
+.game-state-container{
+
+    @include grid-container-mixin(start center, center, 48% 48%, repeat(13, 48%));
+    height : 100%;
+    width : 100%;
+    background-color: #6f4cc0;
+    overflow: scroll;
+
+}
+
+
+.party-controls-container{
+
+    @include grid-container-mixin(end center, center, 100%);
+    height : 100%;
+    width : 100%;
+}
+
+.title{
+
+    width : 85%;
+    height : 20%;
+    background-color: blue;
+    text-align: center;
+
+}
+
+.property-container{
+
+    display : flex;
+    flex-direction: row;
+    height : 100%;
+    justify-content: space-around;
+}
+
+
+.house-shape{
+
+    height : 80%;
+    width : 23%;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.hotel-shape{
+
+    height : 80%;
+    width : 22%;
+    background-color: black;
+
+}
+
+.log-message{
+
+    margin : 5px;
+    font-weight: 500;
+    font-size : 1.15rem;
+}

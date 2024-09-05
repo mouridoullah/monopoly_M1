@@ -1,0 +1,93 @@
+@import 'Global.scss';
+
+.card{
+
+    @include grid-container-mixin(center, center, 100%, 20% 25% 40% 15%);
+
+    border-right: solid;
+    box-sizing: border-box;
+
+}
+
+
+.card-body-grid-container{
+
+    /*@include grid-container-mixin(center, center, 50% 50%, repeat(3, 33.33%));*/
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+.hcard{
+
+    @include grid-container-mixin(center, center stretch, 16% 84%, 25% 50% 25%);
+    border-right: solid;
+    border-top: solid;
+    box-sizing: border-box;
+    border-left: solid;
+
+}
+
+.color-banner{
+
+    box-sizing: border-box;
+    border-bottom: solid;
+    height : 100%;
+    width : 100%;
+}
+
+.price-span{
+
+    height : 100%;
+    font-size : 1.5vh;
+    text-align: center;
+    margin-bottom : 7px;
+    z-index : 2;
+
+}
+
+
+.color-banner-hr{
+
+    grid-row: span 3;
+    height : 100%;
+    border-right: solid;
+
+}
+
+.color-banner-hl{
+
+    grid-row: span 3;
+    height : 100%;
+    border-left: solid;
+}
+
+.banner-hl{
+
+    grid-row: span 3;
+}
+
+.banner-hr{
+
+    grid-row: span 3;
+}
+
+.span-row{
+
+    grid-row : span 4;
+
+}
+
+.property-card-container{
+
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height : 100%;
+    width : 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
